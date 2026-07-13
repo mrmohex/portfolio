@@ -286,7 +286,7 @@
                 contactSubmitBtn.textContent = '$ send message';
             });
         });
-        fetch("https://api.countapi.xyz/hit/mrmohex.github.io/portfolio")
+        fetch("https://api.counterapi.dev/v1/mrmohex.github/portfolio/up")
         .then(response => response.json())
         .then(data => {
             document.getElementById("views").textContent = data.value.toLocaleString();
