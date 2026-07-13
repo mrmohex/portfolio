@@ -286,14 +286,25 @@
                 contactSubmitBtn.textContent = '$ send message';
             });
         });
-        fetch("https://api.counterapi.dev/v1/mrmohex.github/portfolio/up")
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById("views").textContent = data.value.toLocaleString();
-        })
-        .catch(() => {
-            document.getElementById("views").textContent = "N/A";
-        });
+        
+        const hasVisited = localStorage.getItem("portfolio_visited");
+
+        if (!hasVisited) {
+            // First visit from this browser
+            fetch("https://api.counterapi.dev/v1/mrmohex.github/portfolio/up")
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById("views").textContent = data.count;
+                    localStorage.setItem("portfolio_visited", "true");
+                });
+        } else {
+            // Already counted, just read the current value
+            fetch("https://api.counterapi.dev/v1/mrmohex.github/portfolio")
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById("views").textContent = data.count;
+                });
+        }
     </script>
 
 </body>
