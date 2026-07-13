@@ -22,7 +22,11 @@
             <span class="glitch-layer" aria-hidden="true">Who Am I?</span>
         </h1>
     </header>
-
+    
+    <div class="visitor-counter">
+    👁️ <span id="views">Loading...</span> views
+    </div>
+    
     <nav class="terminal-nav" aria-label="Primary">
         <ul>
             <li><a href="#about_me">About Me</a></li>
@@ -281,6 +285,14 @@
                 contactSubmitBtn.disabled = false;
                 contactSubmitBtn.textContent = '$ send message';
             });
+        });
+        fetch("https://api.countapi.xyz/hit/mrmohex.github.io/portfolio")
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("views").textContent = data.value.toLocaleString();
+        })
+        .catch(() => {
+            document.getElementById("views").textContent = "N/A";
         });
     </script>
 
