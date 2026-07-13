@@ -536,13 +536,13 @@ span#views {
   font-weight: bold;
 }
 .visitor-counter{
-  position: fixed;
-  top: 10px;
+  position: absolute;
+  top: 18px;
   right: 10px;
   z-index:1000;
   background-color: var(--bg-panel-alt);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 6px 12px;
+  padding: 4px 10px;
   font-size: clamp(12px, 1.5vw, 14px);
 }
