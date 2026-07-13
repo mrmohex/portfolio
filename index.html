@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="page_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <title>Mohamed Essam Ibrahim</title>
+</head>
+<body>
+
+    <div class="scanline-overlay" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="prompt-line"><span class="prompt">root@MoHex</span>:~$ ./run_profile.sh</div>
+        <h1 data-text="INTRODUCE_ME">
+            INTRODUCE_ME
+            <span class="glitch-layer" aria-hidden="true">INTRODUCE_ME</span>
+        </h1>
+    </header>
+
+    <nav class="terminal-nav" aria-label="Primary">
+        <ul>
+            <li><a href="#about_me">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#my_cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="window-grid">
+
+        <article class="terminal-window">
+            <div class="window-bar">
+                <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+                <span class="title">whoami.sh</span>
+            </div>
+            <div class="window-body">
+                <p class="line"><span class="prompt">$</span><span class="out">whoami</span></p>
+                <p class="line out">I'm <i>Mohamed Essam</i>, student of cybersecurity <i>at ERU University</i><span class="cursor"></span></p>
+            </div>
+        </article>
+
+        <article class="terminal-window">
+            <div class="window-bar">
+                <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+                <span class="title">skills.sh</span>
+            </div>
+            <div class="window-body">
+                <p class="line"><span class="prompt">$</span><span class="out">cat skills.txt</span></p>
+                <p class="line out">Stack: <i> Reconnaissance · Enumeration · Cryptography · Burpsuite · Networking · Linux · HTML · CSS · Python · C++</i></p>
+            </div>
+        </article>
+
+    </section>
+
+    <section class="hero" id="about_me">
+        <div id="vanta-target" class="hero" style="position:absolute; inset:0; min-height:100%;"></div>
+        <div class="hero-content">
+            <p class="eyebrow">// target profile</p>
+            <h2>I'M MOHAMED ESSAM</h2>
+            <p>
+                Mohamed Essam is a student at the
+                <a href="https://eru.edu.eg/ar/" target="_blank" rel="noopener">Egyptian Russian University</a>
+                majoring in <i>Cyber Security</i>.<br>
+                He also has experience in <i>website design</i> and <i>programming</i> using <i>Python</i> and <i>C++</i>.
+            </p>
+            <button class="cta-btn" id="contact-btn">$ contact me</button>
+        </div>
+    </section>
+
+    <section class="terminal-section" id="projects">
+        <p class="section-eyebrow">// deployed_projects</p>
+        <h2 class="section-title">PROJECTS</h2>
+
+        <div class="project-grid">
+
+            <article class="terminal-window project-card">
+                <div class="window-bar">
+                    <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+                    <span class="title">Psycho.py</span>
+                </div>
+                <div class="window-body">
+                    <p class="line"><span class="prompt">$</span><span class="out">python Psycho.py</span></p>
+                    <p class="line out">Psycho-Bruteforcer is a fast, multi-threaded Python tool built for authorized security testing and lab environments. It automates authentication testing with features such as CSRF token handling, session management, SOCKS5 proxy support, User-Agent rotation, redirect detection, and memory-efficient processing of large wordlists, making it ideal for studying web authentication workflows and security defenses.
+</p>
+                    <p class="line tags"><i>Python</i> · <i>brute force</i></p>
+                </div>
+            </article>
+
+
+            <article class="terminal-window project-card">
+                <div class="window-bar">
+                    <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+                    <span class="title">library_system.java</span>
+                </div>
+                <div class="window-body">
+                    <p class="line"><span class="prompt">$</span><span class="out">java LibraryManager</span></p>
+                    <p class="line out">A library management system implementing book management, user registration, and a borrowing/returning workflow.</p>
+                    <p class="line tags"><i>Java</i></p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="terminal-section" id="my_cv">
+        <p class="section-eyebrow">// education_and_experience</p>
+        <h2 class="section-title">CV</h2>
+
+        <div class="cv-timeline">
+
+            <div class="cv-entry">
+                <div class="cv-marker"></div>
+                <div class="cv-content">
+                    <p class="cv-date">2026 &mdash; Present</p>
+                    <h3 class="cv-role">Offensive Technical Member (Web PenTest Specialized)</h3>
+                    <p class="cv-org">ERU Cybersecurity Club</p>
+                    <p class="cv-desc">Delivers hands-on Web Application Penetration Testing sessions, teaches exploitation techniques for XSS, SQLi, and CSRF, guides students through practical Burp Suite labs, and mentors junior members.</p>
+                </div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-marker"></div>
+                <div class="cv-content">
+                    <p class="cv-date">Expected 2027</p>
+                    <h3 class="cv-role">B.Sc. in Computer Science and Artificial Intelligence</h3>
+                    <p class="cv-org">The Egyptian Russian University (ERU), Badr City, Egypt</p>
+                    <p class="cv-desc">Currently in Level 3, building a foundation across computer science and AI while specializing independently in offensive security.</p>
+                </div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-marker"></div>
+                <div class="cv-content">
+                    <p class="cv-date">Ongoing</p>
+                    <h3 class="cv-role">Training &amp; Learning Paths</h3>
+                    <p class="cv-org">Hack The Box Academy &amp; PortSwigger Academy</p>
+                    <p class="cv-desc">Web Penetration Tester (CWES), Penetration Tester (CPTS), Wi-Fi Penetration Tester (CWPE), and AI Red Teamer paths on HTB Academy, alongside PortSwigger's Web Security learning path.</p>
+                </div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-marker"></div>
+                <div class="cv-content">
+                    <p class="cv-date">&mdash;</p>
+                    <h3 class="cv-role">Certifications</h3>
+                    <p class="cv-org">Huawei · Sololearn · Mahara-Tech · AWS Academy</p>
+                    <p class="cv-desc">Certified Python (Huawei), Intro to C++ &amp; Intro to Java (Sololearn), Ubuntu Linux Essentials (Mahara-Tech), and Cloud Foundations (AWS Academy).</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cv-pdf-block">
+            <p class="cv-pdf-label"><span class="prompt">$</span><span class="out">open mohamed_essam_cv.pdf</span></p>
+            <div class="cv-pdf-frame">
+                <iframe src="mohamed_essam_cv.pdf" title="Mohamed Essam CV" loading="lazy"></iframe>
+            </div>
+            <a class="cta-btn cv-download-btn" href="mohamed_essam_cv.pdf" download>$ download cv.pdf</a>
+        </div>
+    </section>
+
+    <section class="terminal-section" id="contact">
+        <p class="section-eyebrow">// open_channel</p>
+        <h2 class="section-title">CONTACT ME</h2>
+
+        <div class="contact-grid">
+
+            <article class="terminal-window contact-window">
+                <div class="window-bar">
+                    <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+                    <span class="title">send_message.sh</span>
+                </div>
+                <div class="window-body">
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/xbdnjogg" method="POST">
+                        <label for="name">name</label>
+                        <input type="text" id="name" name="name" placeholder="jane_doe" required>
+
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email" placeholder="jane@doe.com" required>
+
+                        <label for="message">message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="type your message.." required></textarea>
+
+                        <button type="submit" class="cta-btn" id="contact-submit-btn">$ send message</button>
+                        <p class="form-status" id="contact-form-status" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </article>
+
+            <article class="terminal-window contact-window">
+                <div class="window-bar">
+                    <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+                    <span class="title">contact_info.txt</span>
+                </div>
+                <div class="window-body">
+                    <p class="line"><span class="prompt">$</span><span class="out">cat contact_info.txt</span></p>
+                    <p class="line out">email: <i>me98essam@gmail.com</i></p>
+                    <p class="line out">phone: <i>+20 101 715 5028</i></p>
+                    <p class="line out">location: <i>Cairo, Egypt</i></p>
+                    <div class="social-box contact-socials" aria-label="Social links">
+                        <a href="#" class="fa fa-facebook" aria-label="Facebook"></a>
+                        <a href="https://www.linkedin.com/in/mohamed-essam-ibrahim-a2a811313/" class="fa fa-linkedin" aria-label="LinkedIn"></a>
+                        <a href="#" class="fa fa-instagram" aria-label="Instagram"></a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>copyright 2026&copy;_</p>
+    </footer>
+
+    <script src="three.min.js"></script>
+    <script src="vanta.net.min.js"></script>
+    <script>
+        var vantaEffect = VANTA.NET({
+            el: "#vanta-target",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 0.75,
+            color: 0x39ff88,
+            backgroundColor: 0x06090a,
+            points: window.innerWidth < 640 ? 7.00 : 12.00,
+            maxDistance: 24.00
+        });
+
+        document.getElementById('contact-btn').addEventListener('click', function () {
+            window.location.href = '#contact';
+        });
+
+        const contactForm = document.getElementById('contact-form');
+        const contactStatus = document.getElementById('contact-form-status');
+        const contactSubmitBtn = document.getElementById('contact-submit-btn');
+
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            if (contactForm.action.includes('YOUR_FORM_ID')) {
+                contactStatus.textContent = '// form not connected yet: replace YOUR_FORM_ID in index.html with your Formspree endpoint';
+                contactStatus.classList.add('error');
+                return;
+            }
+
+            contactSubmitBtn.disabled = true;
+            contactSubmitBtn.textContent = '$ sending...';
+            contactStatus.textContent = '';
+            contactStatus.classList.remove('error', 'success');
+
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(function (response) {
+                if (response.ok) {
+                    contactStatus.textContent = '// message sent. thanks for reaching out';
+                    contactStatus.classList.add('success');
+                    contactForm.reset();
+                } else {
+                    return response.json().then(function (data) {
+                        throw new Error(data && data.errors ? data.errors.map(function (e){ return e.message; }).join(', ') : 'submission failed');
+                    });
+                }
+            })
+            .catch(function (err) {
+                contactStatus.textContent = '// error: ' + err.message;
+                contactStatus.classList.add('error');
+            })
+            .finally(function () {
+                contactSubmitBtn.disabled = false;
+                contactSubmitBtn.textContent = '$ send message';
+            });
+        });
+    </script>
+
+</body>
+</html>
