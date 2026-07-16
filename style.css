@@ -439,6 +439,49 @@ a{ color: var(--green); }
   .cv-pdf-frame{ height: 60vh; min-height: 340px; }
 }
 
+/* Writeups */
+.writeup-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--gap);
+}
+.writeup-card .tags{
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.writeup-card .tags i{ margin-right: 0; }
+.badge{
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  padding: 2px 8px;
+  border-radius: var(--radius);
+  border: 1px solid currentColor;
+}
+.badge-easy{ color: var(--green); background: rgba(57,255,136,.08); }
+.badge-medium{ color: var(--amber); background: rgba(255,176,0,.08); }
+.badge-hard{ color: var(--red); background: rgba(255,77,77,.08); }
+.writeup-link{
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--green);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  border-bottom: 1px dashed var(--green-dim);
+  transition: color .25s ease, border-color .25s ease;
+}
+.writeup-link:hover, .writeup-link:focus-visible{
+  color: var(--green-soft);
+  border-color: var(--green-soft);
+  outline: none;
+}
+
 /* Contact */
 .contact-grid{
   display: grid;
@@ -479,6 +522,13 @@ a{ color: var(--green); }
 .contact-form input::placeholder,
 .contact-form textarea::placeholder{ color: var(--text-faint); }
 .contact-form .cta-btn{ margin-top: 16px; align-self: flex-start; }
+.form-status{
+  margin-top: 10px;
+  font-size: 13px;
+  min-height: 18px;
+}
+.form-status.success{ color: var(--green); }
+.form-status.error{ color: var(--red); }
 .contact-socials{ padding: 18px 0 0; justify-content: flex-start; }
 
 /* ============================================================
